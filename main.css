@@ -1,0 +1,13 @@
+.main {
+    position: absolute;
+    margin: 0px 160px 0px 160px;
+    background-color: #8fbc8f;
+}
+
+.header {
+    position: static;
+}
+
+.login {
+    float: right;
+}
