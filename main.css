@@ -1,13 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDF2C5;
+}
+
 .main {
     position: absolute;
     margin: 0px 160px 0px 160px;
-    background-color: #8fbc8f;
 }
 
 .header {
-    position: static;
+    position: relative;
 }
 
-.login {
-    float: right;
+.header h1 {
+    display: inline;
+    font-family: Arial Black;
+    color: #778A50;
+    margin-right: 468px;
+}
+
+.bordered-text {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-family: Arial Bold;
+    font-size: 14px;
+    font-weight: bold;
+    color: #778A50;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.bordered-text p {
+    position: relative;
+    transform: translateY(-50%);
+}
+
+#login {
+    width: 60px;
+}
+
+#join {
+    width: 50px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 }
