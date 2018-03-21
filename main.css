@@ -13,6 +13,7 @@ body {
 
 .header {
     position: relative;
+    margin-top: 53px;
 }
 
 .header h1 {
@@ -22,33 +23,43 @@ body {
     margin-right: 468px;
 }
 
-.bordered-text {
+.text-border {
     position: relative;
     display: inline-block;
-    text-align: center;
+    border: 1px solid #778A50;
+    border-radius: 3px;
+    height: 25px;
     font-family: Arial Bold;
     font-size: 14px;
     font-weight: bold;
     color: #778A50;
-    height: 25px;
     margin-left: 10px;
-}
-
-.bordered-text p {
-    position: relative;
-    transform: translateY(-50%);
-}
-
-#login {
     width: 60px;
 }
 
-#join {
-    width: 50px;
+.text-border p {
+    margin: 0;
+    padding: 0;
 }
 
 .icon {
     width: 25px;
     height: 25px;
     margin-right: 10px;
+}
+
+/*----------------------------------*/
+
+.nav {
+    width: 940px;
+    height: 44px;
+    background-color: #778A50;
+    margin-top: 8px;
+}
+
+.nav a {
+    display: inline-block;
+    font-family: Arial Black;
+    font-size: 16px;
+    color: #EDF2C5;
 }
