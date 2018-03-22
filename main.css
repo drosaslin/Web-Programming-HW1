@@ -10,18 +10,24 @@ body {
 
 .main {
     position: absolute;
-    margin: 0px 160px 0px 160px;
+    margin: 53px 160px 0px 160px;
 }
+
+/*------------------------------------------*/
 
 .header {
     position: relative;
-    margin-top: 53px;
+    height: 42px;
+    background-color: blue;
 }
 
 .header h1 {
-    display: inline;
+    position: relative;
+    display: inline-block;
     font-family: Arial Black;
     color: #778A50;
+    margin-top: 0px;
+    margin-bottom: 8px;
     margin-right: 468px;
 }
 
@@ -58,7 +64,6 @@ body {
     background-color: #778A50;
     border: 1px solid #778A50;
     border-radius: 3px;
-    margin-top: 8px;
     margin-bottom: 20px;
 }
 
