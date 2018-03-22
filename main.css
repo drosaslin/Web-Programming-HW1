@@ -16,49 +16,83 @@ body {
 /*------------------------------------------*/
 
 .header {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+}
+
+.top-box {
     position: relative;
-    height: 42px;
-    background-color: blue;
+    display: flex;
+    flex-wrap: wrap; 
+    /* background-color:red; */
 }
 
 .header h1 {
     position: relative;
     display: inline-block;
     font-family: Arial Black;
+    font-size: 41px;
     color: #778A50;
     margin-top: 0px;
     margin-bottom: 8px;
     margin-right: 468px;
 }
 
-.text-border {
+.icons {
     position: relative;
-    display: inline-block;
-    border: 1px solid #778A50;
-    border-radius: 3px;
-    height: 25px;
-    font-family: Arial Bold;
-    font-size: 14px;
-    font-weight: bold;
-    color: #778A50;
-    margin-left: 10px;
-    width: 60px;
 }
 
-.text-border p {
-    margin: 0;
-    padding: 0;
-}
-
-.icon {
+.icons a {
     width: 25px;
     height: 25px;
     margin-right: 10px;
 }
 
-/*----------------------------------*/
+.icons #facebook {
+    position: absolute;
+    bottom: 17px;
+}
+
+.icons #instagram {
+    position: absolute;
+    bottom: 17px;
+    left: 35px;
+}
+
+.icons .login {
+    position: absolute;
+    bottom: 17px;
+    left: 80px;
+}
+
+.icons .join {
+    position: absolute;
+    bottom: 17px;
+    left: 150px;
+}
+
+.icons .text-border {
+    position: absolute;
+    display: inline-block;
+    border: 1px solid #778A50;
+    border-radius: 3px;
+    height: 25px;
+    margin-left: 10px;
+    width: 60px;
+} 
+
+.text-border p {
+    font-family: Arial Bold;
+    font-size: 14px;
+    font-weight: bold;
+    color: #778A50;
+    margin: 0;
+    padding: 0;
+}
 
 .nav {
+    position: relative;
     width: 940px;
     height: 44px;
     background-color: #778A50;
