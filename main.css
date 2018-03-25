@@ -4,95 +4,109 @@
 
 body {
     background-color: #EDF2C5;
-    width: 1260px;
-    height: 940px;
+    margin: 0%;
+}
+
+.container {
+    width: 1264px;
+    height: 880px;
 }
 
 .main {
-    position: absolute;
-    margin: 53px 160px 0px 160px;
+    margin: 53px 160px 24px 160px;
+    width: 940px;
+    font-size: 0%;
 }
 
 /*------------------------------------------*/
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    /* background-color: blue; */
-}
-
 .top-box {
-    position: relative;
     display: flex;
-    flex-wrap: wrap; 
-    /* background-color:red; */
+    align-items: center;
+    width: 940px;
+    height: 50px;
 }
 
-.header h1 {
+.top-box * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title {
     position: relative;
     display: inline-block;
-    font-family: Arial Black;
-    font-size: 41px;
-    color: #778A50;
-    margin-top: 0px;
+    width: 271px;
+    height: 42px;
     margin-bottom: 8px;
     margin-right: 468px;
 }
 
-.icons {
-    position: relative;
+.title h1 {
+    display: inline-block;
+    font-family: Arial Black;
+    font-size: 36px;
+    color: #778A50;
+    margin-bottom: 8px;
+    margin-top: 0%;
 }
 
-.icons a {
+.icons * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icons {
+    margin-top: 8px;
+	padding-bottom: 17px;
+	height: 25px;
+    width: 201px;
+    padding: 0%;
+    margin-bottom: 17px;
+    font-size: 0%;
+    float: right;
+}
+
+.facebook, .instagram {
     width: 25px;
     height: 25px;
     margin-right: 10px;
 }
 
-.icons #facebook {
-    position: absolute;
-    bottom: 17px;
+.vline {
+    width: 1px;
+	height: 25px;
+	background-color: #778A50;
+	display: inline-block;
 }
 
-.icons #instagram {
-    position: absolute;
-    bottom: 17px;
-    left: 35px;
-}
-
-.icons .login {
-    position: absolute;
-    bottom: 17px;
-    left: 80px;
-}
-
-.icons .join {
-    position: absolute;
-    bottom: 17px;
-    left: 150px;
-}
-
-.icons .text-border {
-    position: absolute;
+.button {
     display: inline-block;
+}
+
+.button * {
+    display: inline-block;
+    font-family: arial black;
+    font-size: 12px;
+    color: #778A50;
+    font-weight: bold;
     border: 1px solid #778A50;
     border-radius: 3px;
     height: 25px;
+    background-color: #EDF2C5;
     margin-left: 10px;
-    width: 60px;
-} 
+}
 
-.text-border p {
-    font-family: Arial Bold;
-    font-size: 14px;
-    font-weight: bold;
-    color: #778A50;
-    margin: 0;
-    padding: 0;
+.login {
+    width: 60px;
+}
+
+.join {
+    width: 50px;
 }
 
 .nav {
-    position: relative;
+    display: flex;
+    align-items: center;
     width: 940px;
     height: 44px;
     background-color: #778A50;
@@ -105,35 +119,34 @@ body {
     display: inline-block;
     font-family: Arial Black;
     font-size: 16px;
-    margin-right: 60px;
-    margin-top: 10px;
+    padding: 16px 30px 16px 30px;
     color: #EDF2C5;
-}
-
-.nav .home {
-    margin-left: 30px;
 }
 
 /* -------------------------------*/
 
-.grid-container {
+.container-images {
     display: inline-grid;
-    grid-template-rows: 45px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "a a a"
-                         "b c d";
-    width: 445px;
+    float: left;
+    grid-template-rows: 45px 140px;
+    grid-template-columns: 140px 140px 140px;
     grid-column-gap: 12px;
     grid-row-gap: 15px;
     margin-top: 30px;
 }
 
-.vegetables {
-    grid-area: a;
-    height: 45px;
+.container-images h2 {
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+    font-family: Arial Black;
+    font-size: 16px;
+    color:#EDF2C5;
     border: 1px solid #778A50;
     border-radius: 3px;
     background-color: #778A50;
+    padding: 15px 0px 15px 30px;
+    margin: 0%;
 }
 
 .image {
@@ -141,14 +154,82 @@ body {
     height: 140px;
 }
 
-.pepper {
-    grid-area: b;
+/* -------------------------------*/
+
+.container-contact {
+    display: inline-grid;
+    float: right;
+    grid-template-rows: 45px 140px;
+    grid-template-columns: 140px 140px 140px;
+    grid-column-gap: 12px;
+    grid-row-gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
-.carrot {
-    grid-area: c;
+.container-contact h2 {
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+    font-family: Arial Black;
+    font-size: 16px;
+    color:#EDF2C5;
+    border: 1px solid #778A50;
+    border-radius: 3px;
+    background-color: #778A50;
+    padding: 17px 0px 16px 30px;
+    margin: 0%;
 }
 
-.corn {
-    grid-area: d;
+.container-contact div {
+    grid-column: 1/4;
+    background-color: #F7FBDA;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 1.33;
+    padding-left: 15px;
+    margin: 0%;
+    color: #7D7D7D;
+}
+
+#hline {
+    width: 414px;
+    height: 1px;
+    background-color: #7D7D7D;
+}
+
+.contacting {
+    margin: 0%;
+    padding: 16px 15px 16px 0px;
+}
+
+.email, .phone {
+    line-height: 1.83;
+}
+
+.email {
+    margin: 0%;
+    padding: 16px 15px 0px 0px;
+}
+
+.phone {
+    margin: 0%;
+}
+
+/* ------------------------ */
+
+.footer {
+    width: 1264px;
+    height: 60px;
+    background-color: #778A50;
+    border: 1px solid #778A50;
+    clear: both;
+} 
+
+.footer p {
+    font-family: Arial;
+    font-size: 12px;
+    color: #EDF2C5;
+    padding: 24px 479px 25px 479px;
+    margin: 0%;
 }

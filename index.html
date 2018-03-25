@@ -3,24 +3,26 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Vegetables</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
 <body>
+    <div class="container">
     <div class="main">
         <header class="header">
             <div class="top-box">
-                <h1>Vegetables</h1>
+                <div class="title">
+                    <h1>Vegetables</h1>
+                </div>
                 <div class="icons">
-                    <a id="facebook"><img src="images/btn_facebook.png" alt="facebook"></a>
-                    <a id="instagram"><img src="images/btn_instagram.png" alt="instagram"></a>
-                    <div class="text-border login">
-                        <!-- <p id="login">LOGIN</p> -->
-                    </div>
-                    <div class="text-border join">
-                        <!-- <p id="join">JOIN</p> -->
+                    <a><img class="facebook" src="images/btn_facebook.png" alt="facebook"></a>
+                    <a><img class="instagram" src="images/btn_instagram.png" alt="instagram"></a>
+                    <div class="vline"></div>
+                    <div class="button">
+                        <button class="login">LOGIN</button>
+                        <button class="join">JOIN</button>
                     </div>
                 </div>
             </div>
@@ -36,26 +38,29 @@
             <img src="images/img_main_pumpkin.png" alt="vegetables">
         </header>
 
-        <div class="grid-container">
-            <h2 class="vegetables">Vegetables</h2>
+        <div class="container-images">
+            <h2>Vegetables</h2>
             <img class="pepper image" src="images/img_vegetables_pepper.png" alt="pepper">
             <img class="carrot image" src="images/img_vegetables_carrot.png" alt="carrot">
             <img class="corn image" src="images/img_vegetables_corn.png" alt="corn">
         </div>
         
-        <div>
+        <div class="container-contact">
             <h2>Contact</h2>
-            <p>For any question or suggestions about Vegetables, Vegetables Club or
-            your online order you can contact Vegetables Customer Service by phone,
-            email or post and we'll be happy to help</p>
-
-            <p>E-mail: Vegetables@aaabbbccc.com</p>
-            <p>PHONE: +886-123-456-789</p>
+            <div>
+                <p class="contacting">For any question or suggestions about Vegetables, Vegetables Club or
+                your online order you can contact Vegetables Customer Service by phone,
+                email or post and we'll be happy to help</p>
+                <div id="hline"></div>
+                <p class="email">E-mail: Vegetables@aaabbbccc.com</p>
+                <p class="phone">PHONE: +886-123-456-789</p>
+            </div>
         </div>
-
-        <footer>
+        </div>
+        <footer class="footer">
             <p>Copyrights 2017 Vegetables cise / Design by Vegetables</p>
         </footer>
-    </div>
+    
+</div>
 </body>
 </html>
