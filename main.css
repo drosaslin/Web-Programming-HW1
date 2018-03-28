@@ -37,7 +37,6 @@ body {
     display: inline-block;
     width: 271px;
     height: 42px;
-    margin-bottom: 8px;
     margin-right: 468px;
 }
 
@@ -48,6 +47,7 @@ body {
     color: #778A50;
     margin-bottom: 8px;
     margin-top: 0%;
+    line-height: 0.9;
 }
 
 .icons * {
